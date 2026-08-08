@@ -1,0 +1,366 @@
+/* CH. RAM DAS Portfolio
+   style.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Body */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8fafc;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Navigation */
+
+header {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #444;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.nav-links li a:hover {
+  color: #2563eb;
+}
+
+.active {
+  color: #2563eb !important;
+}
+
+/* Hero */
+
+.hero {
+  width: 90%;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #2563eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 24px;
+  color: #666;
+}
+
+.hero-text h2 {
+  font-size: 52px;
+  color: #2563eb;
+  margin: 10px 0;
+}
+
+.hero-text h3 {
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  text-align: justify;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Call To Action */
+
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta h2 {
+  color: #2563eb;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #555;
+  text-align: center;
+}
+
+.cta .btn {
+  display: inline-block;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  transition: .3s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: .3s;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Sections */
+
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+section h2 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 40px;
+  font-size: 34px;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.resume-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  width: auto;
+  display: inline-block;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+/* Project Cards */
+
+.project {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+  margin-bottom: 30px;
+  transition: .3s;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+}
+
+.project h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.project p {
+  margin-bottom: 20px;
+}
+
+/* Lists */
+
+ul,
+ol {
+  margin-left: 25px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+/* Contact */
+
+.contact-info {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 70px;
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text p {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-image img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-text h2 {
+    font-size: 38px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .hero-text h2 {
+    font-size: 30px;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+}
